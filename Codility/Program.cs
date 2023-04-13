@@ -6,8 +6,8 @@ int[] A = { 1, 3, 6, 4, 1, 2 };
 
 int test = Solution_01.solution(A);
 
-Console.WriteLine("Answer is: 5");
-Console.WriteLine($"Got:     {test}");
+Console.WriteLine("Answer: 5");
+Console.WriteLine("Got:    {0}", test);
 
 
 public static class Solution_01 {
