@@ -8,15 +8,13 @@ int answer = 4;
 
 int result = SmallestPositiveInt.solution(A);
 
-if (answer == result)
-    Console.BackgroundColor = ConsoleColor.Green;
-else
-    Console.BackgroundColor = ConsoleColor.Red;
+Utility.ConsoleCory(answer, result);
 
-Console.WriteLine("\n");
-Console.WriteLine("Answer: {0}", answer);
-Console.WriteLine("Got:    {0}", result);
-Console.BackgroundColor = ConsoleColor.White;
+Console.WriteLine("Test 02, Binary Gap");
 
-Console.WriteLine("Test 02, ");
+int N = 20;
+answer = 1;
 
+result = BinaryGap.solution(N);
+
+Utility.ConsoleCory(answer, result);
