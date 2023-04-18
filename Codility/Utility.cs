@@ -11,6 +11,7 @@ public static class Utility
 
         Console.WriteLine("Answer: {0}", answer);
         Console.WriteLine("Got:    {0}", result);
+        
         Console.BackgroundColor = ConsoleColor.Black;
     }
 }

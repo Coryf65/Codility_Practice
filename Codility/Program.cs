@@ -15,6 +15,17 @@ Console.WriteLine("Test 02, Binary Gap");
 int N = 20;
 answer = 1;
 
-result = BinaryGap.solution(N);
+result = BinaryGap.Solution(N);
+
+Utility.ConsoleCory(answer, result);
+
+// "9:42", "11:42", 9
+// "10:00", "13:21", 17
+// "10:00", "10:30", 5
+string startTime = "9:42";
+string endTime = "11:42";
+answer = 9;
+
+result = ParkingCost.Solution(startTime, endTime);
 
 Utility.ConsoleCory(answer, result);
