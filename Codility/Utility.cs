@@ -17,4 +17,16 @@ public static class Utility
         Console.ResetColor();
         Console.WriteLine();
     }
+
+    public static void Title(string title)
+    {
+        Console.WriteLine(title);
+
+        foreach (char item in title)
+        {
+            Console.Write("-");
+        }
+
+        Console.WriteLine("\n");
+    }
 }
