@@ -14,8 +14,9 @@ public static class Utility
 
         Console.Write("Answer: {0}\n", answer);
         Console.Write("Got:    {0}\n", result);
+
         Console.ResetColor();
-        Console.WriteLine();
+        Console.WriteLine();        
     }
 
     public static void Title(string title)
@@ -26,7 +27,7 @@ public static class Utility
         {
             Console.Write("-");
         }
-
+        
         Console.WriteLine("\n");
     }
 }
