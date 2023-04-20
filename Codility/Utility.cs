@@ -12,9 +12,9 @@ public static class Utility
         else
             Console.BackgroundColor = ConsoleColor.Red;
 
-        Console.WriteLine("Answer: {0}", answer);
-        Console.WriteLine("Got:    {0}", result);
-        
-        Console.BackgroundColor = ConsoleColor.Black;
+        Console.Write("Answer: {0}\n", answer);
+        Console.Write("Got:    {0}\n", result);
+        Console.ResetColor();
+        Console.WriteLine();
     }
 }

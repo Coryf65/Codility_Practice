@@ -17,6 +17,8 @@ result = BinaryGap.Solution(number);
 
 Utility.ConsoleCory(answer, result);
 
+Console.WriteLine("Test 03, Parking Cost");
+
 // "9:42", "11:42", 9
 // "10:00", "13:21", 17
 // "10:00", "10:30", 5
