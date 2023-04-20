@@ -14,29 +14,29 @@ public static class ParkingCost
         int additionalFee = 4; // hours after first
 
         DateTime startTime = Convert.ToDateTime(E);
-        Console.WriteLine($"startTime: {startTime}");
+        //Console.WriteLine($"startTime: {startTime}");
         DateTime endTime = Convert.ToDateTime(L);
-        Console.WriteLine($"endTime: {endTime}");
+        //Console.WriteLine($"endTime: {endTime}");
 
         double uh = (endTime - startTime).TotalHours;
-        Console.WriteLine($"uh: {uh}");
+        //Console.WriteLine($"uh: {uh}");
 
         int totalHours = (int)Math.Ceiling(uh);
 
-        Console.WriteLine($"totalHours: {totalHours}");
+        //Console.WriteLine($"totalHours: {totalHours}");
 
         if (totalHours > 1)
             totalHours -= 1;
         else if (totalHours <= 1)
             totalHours = 0;
 
-        Console.WriteLine($"totalHours: {totalHours}");
+        //Console.WriteLine($"totalHours: {totalHours}");
 
         // enter fee
         cost = entranceFee + firstHourFee + (totalHours * additionalFee);
-        Console.WriteLine("entranceFee + firstHourFee + (totalHours * additionalFee)");
-        Console.WriteLine($"{entranceFee} + {firstHourFee} + ({totalHours} * {additionalFee})");
-        Console.WriteLine($"cost: {cost}");
+        //Console.WriteLine("entranceFee + firstHourFee + (totalHours * additionalFee)");
+        //Console.WriteLine($"{entranceFee} + {firstHourFee} + ({totalHours} * {additionalFee})");
+        //Console.WriteLine($"cost: {cost}");
 
         return cost;
     }

@@ -2,6 +2,10 @@ namespace Codility;
 
 public static class SmallestPositiveInt
 {
+    ///<Summary>
+    /// Find the smallest possible int not listed in the array of ints
+    /// <code>example: { 1, 3, 2, 9, 8, 6, 7, 5} = 4</code>
+    ///</Summary>
     public static int solution(int[] A)
     {        
         // Implement your solution here

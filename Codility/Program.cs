@@ -2,19 +2,17 @@
 
 Console.WriteLine("Test 01, SmallestPositiveInt");
 
-// should return 5
+// array of ints we will find the smallest not in here
 int[] A =  { 1, 2, 5, 9, 3, 6 };
 int answer = 4;
-
 int result = SmallestPositiveInt.solution(A);
 
 Utility.ConsoleCory(answer, result);
 
 Console.WriteLine("Test 02, Binary Gap");
 
-int N = 20;
-answer = 1;
-
+int N = 74;
+answer = 2;
 result = BinaryGap.Solution(N);
 
 Utility.ConsoleCory(answer, result);
@@ -25,7 +23,6 @@ Utility.ConsoleCory(answer, result);
 string startTime = "9:42";
 string endTime = "11:42";
 answer = 9;
-
 result = ParkingCost.Solution(startTime, endTime);
 
 Utility.ConsoleCory(answer, result);

@@ -3,33 +3,42 @@ namespace Codility;
 public static class BinaryGap
 {
     ///<Summary>
-    /// Solving the Binary Gap Alogo
+    /// Solving the Binary Gap Alogo, count the number of zeros surrounded by ones.
+    ///<code>example: int `20` in binary is `10100` which has a gap of `1`</code>
     ///</Summary>
     public static int Solution(int N)
     {
-        // 32 = 100000
-        // 20 = 10100 : 1
-        int result = 0;
+        int zeros = 0;
+        int largestZerosCount = 0;
+
+        // convert to binary
         string binary = Convert.ToString(N, 2);
+        //Console.WriteLine($"binary : {binary}");
 
         // convert to an array
-        string[] ar = binary.Split("");
+        char[] ar = binary.ToCharArray();
 
+        // Loop through each char
         for (int i = 0; i < ar.Length; i++)
         {
+            //Console.WriteLine($"ar[i] : {ar[i]}");
             // check when its a 1 
-            if (ar[i] == "1")
+            if (ar[i] == '1')
             {
-                // start counter
-
+                // check if this is the largest zeros counted
+                if (zeros > largestZerosCount)
+                {
+                    largestZerosCount = zeros;
+                    zeros = 0; // reset zero counter
+                    continue;
+                }
+            } else if (ar[i] == '0')
+            {
+                // count the zeros
+                zeros += 1;
             }
-
-            // if 1 and next is zero add to counter
-
-            // save on next 1    
         }
-
-        return result;
+        return largestZerosCount;
     }
 
     ///<Summary>
