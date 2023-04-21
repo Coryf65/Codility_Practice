@@ -6,7 +6,7 @@ public static class UniqueInt
     // Not optimal, needs to run faster 83% correctness, and slow
     public static int Solution(int[] A) {
         // Implement your solution here
-        int result = 0;
+        int result = -1;
         List<int> numbersOfMultipleOccurences = new List<int>();
         List<int> eachNumber = new List<int>();
         List<int> eachUniqueNumber = new List<int>();
@@ -41,18 +41,12 @@ public static class UniqueInt
                 eachUniqueNumber.Remove(number);
             }
         }
+        // does not work on codility\
+        int test = eachUniqueNumber.FirstOrDefault(-99);
 
-        // does not work on codility
-        //result = eachUniqueNumber.FirstOrDefault(-1);
-        
         // same result here
-        if (eachUniqueNumber.FirstOrDefault() > 0)
-        {
-            result = eachUniqueNumber.FirstOrDefault();
-        } else
-        {
-            result = -1;
-        }
+        if (test >= 0)
+            result = test;
         
         Console.WriteLine(result);
 
@@ -60,7 +54,7 @@ public static class UniqueInt
     }
 
     // TODO: maybe optimize a bit using the hashset for uniques?
-    public static int SolutionHashSet(int[] A)
+    public static int SolutionB(int[] A)
     {
         int result = 0;
 
