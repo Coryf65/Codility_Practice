@@ -56,7 +56,7 @@ public static class UniqueInt
     // TODO: maybe optimize a bit using the hashset for uniques?
     public static int SolutionB(int[] A)
     {
-        int result = 0;
+        //int result = 0;
 
         
 
