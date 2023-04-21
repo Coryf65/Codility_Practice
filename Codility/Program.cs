@@ -65,21 +65,20 @@ Utility.ColorConsole(answer, result);
 // QUIZ space below, start soon
 Utility.Title("Codility Test");
 
-// // setup
-// string one = "one";
-// string two = "two";
+// setup
+string[] args1 = {"--name", "SOME_NAME", "--count", "10" };
+string[] args2 = {"--NAME", "SOME_NAME", "--COUNT", "10" };
 
-// // expected answer
-// answer = 0;
+// expected answer
+answer = 0;
 
-// Quiz.SolutionOne();
 
-// Utility.ColorConsole(answer, result);
+ValidateArguments validator = new();
 
-// Quiz.SolutionTwo();
+result = validator.Validate(args1);
 
-// Utility.ColorConsole(answer, result);
+Utility.ColorConsole(answer, result);
 
-// Quiz.SolutionThree();
+result = validator.Validate(args2);
 
-// Utility.ColorConsole(answer, result);
+Utility.ColorConsole(answer, result);

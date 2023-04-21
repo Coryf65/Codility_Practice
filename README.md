@@ -181,9 +181,3 @@ ___
 ## Quiz
 
 ### Problem One
-
-
-### Problem Two
-
-
-### Problem Three
