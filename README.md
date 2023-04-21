@@ -4,6 +4,8 @@ All answers written in C#
 
 - [Smallest Positive Int](#smallestpositiveint) that, given an array A of N integers, returns the smallest positive integer (greater than 0) that does not occur in A.
 - [BinaryGap](#binarygap) Find longest sequence of zeros in binary representation of an integer. 
+- [Parking Costs](#parkingcosts) You parked your car in a parking lot and want to compute the total cost of the ticket.
+
 ___
 
 ## Smallest Positive Int
