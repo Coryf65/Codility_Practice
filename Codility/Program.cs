@@ -39,4 +39,47 @@ Fibonacci.SolutionForLoop(totalLength);
 Console.WriteLine("\nFibonacci using a recursive function");
 Fibonacci.SolutionRecursive(totalLength);
 
-Console.WriteLine();
+Console.WriteLine("\n");
+
+Utility.Title("Lowest Unique int");
+
+// Example test:   [1, 4, 3, 3, 1, 2]
+// Output:
+// 1
+// WRONG ANSWER (got 1 expected 4)
+//[4, 10, 5, 4, 2, 10] = 5
+
+// int[] A = { 1, 4, 3, 3, 1, 2 };
+// answer = 4;
+
+// int[] A = { 4, 5, 4, 2, 10 };
+// answer = 5;
+
+int[] A = { 6, 4, 4, 6 };
+answer = -1;
+
+result = UniqueInt.Solution(A);
+
+Utility.ColorConsole(answer, result);
+
+// QUIZ space below, start soon
+Utility.Title("Codility Test");
+
+// // setup
+// string one = "one";
+// string two = "two";
+
+// // expected answer
+// answer = 0;
+
+// Quiz.SolutionOne();
+
+// Utility.ColorConsole(answer, result);
+
+// Quiz.SolutionTwo();
+
+// Utility.ColorConsole(answer, result);
+
+// Quiz.SolutionThree();
+
+// Utility.ColorConsole(answer, result);
