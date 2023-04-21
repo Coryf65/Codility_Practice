@@ -5,7 +5,7 @@ public static class Utility
     ///<summary>
     /// Colors the console according the to result and the answer matching, Green for matches and red for not matching
     ///</summary>
-    public static void ConsoleCory(int answer, int result)
+    public static void ColorConsole(int answer, int result)
     {
         if (answer == result)
             Console.BackgroundColor = ConsoleColor.Green;

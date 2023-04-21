@@ -7,7 +7,7 @@ int[] numbers =  { 1, 2, 5, 9, 3, 6 };
 int answer = 4;
 int result = SmallestPositiveInt.solution(numbers);
 
-Utility.ConsoleCory(answer, result);
+Utility.ColorConsole(answer, result);
 
 Utility.Title("Test 02, Binary Gap");
 
@@ -15,7 +15,7 @@ int number = 74;
 answer = 2;
 result = BinaryGap.Solution(number);
 
-Utility.ConsoleCory(answer, result);
+Utility.ColorConsole(answer, result);
 
 Utility.Title("Test 03, Parking Cost");
 
@@ -27,7 +27,7 @@ string endTime = "11:42";
 answer = 9;
 result = ParkingCost.Solution(startTime, endTime);
 
-Utility.ConsoleCory(answer, result);
+Utility.ColorConsole(answer, result);
 
 Utility.Title("Test 04, Calculate Fibonacci to x");
 
