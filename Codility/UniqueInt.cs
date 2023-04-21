@@ -58,4 +58,14 @@ public static class UniqueInt
 
         return result;
     }
+
+    // TODO: maybe optimize a bit using the hashset for uniques?
+    public static int SolutionHashSet(int[] A)
+    {
+        int result = 0;
+
+        
+
+        return 0;
+    }
 }
